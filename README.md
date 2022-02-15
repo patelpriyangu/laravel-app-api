@@ -1,5 +1,3 @@
-## How to use and run in local
-
 ## Run below command after cloning the repository.
 - To clone the repository execute this command.
 git clone https://github.com/patelpriyangu/laravel-app-api
