@@ -17,11 +17,12 @@ trait ApiResponseTrait
      * @param integer $statusCode
      * @return JsonResponse
      */
-    protected function responseSuccessJson(JsonResource $resource = null, $statusCode = 200)
+    protected function responseSuccessJson(JsonResource $resource = null,$message = null,$statusCode = 200)
     {
         return response()->json(
             [
                 'data' => !empty($resource) ? $resource->toArray(request()) : null,
+                'message' => $message
             ], $statusCode
         );
     }

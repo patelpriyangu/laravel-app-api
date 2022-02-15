@@ -8,6 +8,7 @@ use App\Http\Requests\LoanApplicationUpdateRequest;
 use App\Http\Resources\LoanApplicationResource;
 use App\Http\Resources\LoanApplicationResourceCollection;
 use App\Models\LoanApplication;
+use App\Models\LoanPaymentOrder;
 use App\Services\LoanApplicationService;
 use App\Traits\ApiResponseTrait;
 use Symfony\Component\HttpFoundation\Response;
@@ -114,7 +115,9 @@ class LoanApplicationsController extends Controller
      */
     public function destroy(LoanApplication $loanApplication)
     {
+        $loanApplication->loanPaymentOrder()->delete();
         $loanApplication->delete();
-        return $this->responseSuccessJson(null, 'successful');
+        $data = "Loan Application Deleted Successfully";
+        return $this->responseSuccessJson(null,$data);
     }
 }

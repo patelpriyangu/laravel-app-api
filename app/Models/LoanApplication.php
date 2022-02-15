@@ -91,4 +91,9 @@ class LoanApplication extends Model
             'loan_application_id' => $this->id, 'status' => LoanPaymentService::COMPLETED_STATUS,
         ])->sum('amount');
     }
+
+    public function loanPaymentOrder()
+    {
+        return $this->hasMany(LoanPaymentOrder::class, 'loan_application_id');
+    }
 }
