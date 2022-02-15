@@ -7,13 +7,15 @@ git clone https://github.com/patelpriyangu/laravel-app-api
 To move into cloned directory.
 cd laravel-app-api
 
-## Copy .env.example file and create .env file in root directory.
 ## Set database environment in env file.
+Copy .env.example file and create .env file in root directory.
 
 set database name in .env file below mentioned parameters. 
 
 DB_DATABASE=laravel
+
 DB_USERNAME=root
+
 DB_PASSWORD=
 
 
