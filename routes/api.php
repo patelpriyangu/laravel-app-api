@@ -29,7 +29,7 @@ Route::group([
     Route::post('logout', [AuthController::class, 'logout']);
 });
 
-Route::apiResource('loan-applications', LoanApplicationsController::class);
+Route::apiResource('loan', LoanApplicationsController::class);
 
 Route::group([
     'middleware' => 'api',
