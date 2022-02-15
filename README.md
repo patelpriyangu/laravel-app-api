@@ -27,6 +27,15 @@ To insert example data into the database. Execute seeding command.
 php artisan db:seed
 
 
+## Postman Collection and API Documentation in postman link.
+
+Postman Json Collection Link
+https://www.getpostman.com/collections/8d231780aeec81e872b2
+
+
+Published Document
+https://documenter.getpostman.com/view/3763224/UVkgwdys
+
 
 ## Now move to postman and set the base_url in variable.
 
