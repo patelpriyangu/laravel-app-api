@@ -27,6 +27,14 @@ To create database table after configuring env file for database. Execute below 
 To insert example data into the database. Execute seeding command.
 - `php artisan db:seed`
 
+To execute bellow json collection API, link is requires to on run local server by executing below command.
+
+- `php artisan serve`
+
+This code will provide a base server link stating 
+Development Server (http://127.0.0.1:8000) started
+
+
 
 ## Postman Collection and API Documentation in postman link.
 
