@@ -12,12 +12,14 @@ class LoginTest extends TestCase
      *
      * @return void
      */
-    public function test_can_create_post() {
+    public function test_user_can_register() {
+    //     global $email;
+    //     $email =rand(12345,678910).'test_register@example.com';
+    //     $credentials= [
+    //         'email'  =>  $email,
+    //         'password'  =>  $password = '123456789',
+    //     ];
 
-        
-
-        // $this->post(route('posts.store'), $data)
-        //     ->assertStatus(201)
-        //     ->assertJson($data);
+    //    $this->assertTrue(auth()->attempt($credentials));
     }
 }

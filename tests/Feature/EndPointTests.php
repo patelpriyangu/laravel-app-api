@@ -8,7 +8,7 @@ use App\{Models\LoanPaymentOrder, Models\LoanApplication, Models\User};
 use Tests\TestCase;
 
 
-class LoanTest extends TestCase
+class EndPointTests extends TestCase
 {
 
     const API_LOAN = '/api/loan-applications/';
